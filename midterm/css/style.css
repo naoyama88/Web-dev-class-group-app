@@ -1,97 +1,17 @@
-/*
-===================================
-This is the reset for all tags
-===================================
-*/
-
 * {
+    padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    font-family: 'Amiri', serif;
+    font-family: 'Quicksand', sans-serif;
 }
+/* font-family: 'Amiri', serif; For Title*/
+/* font-family: 'Quicksand', sans-serif; For p*/
 
-/*
-===================================
-This is for the container
-===================================
-*/
-
-html {
-    scroll-behavior: smooth;
-}
-
-.container {
+html, body {
     width: 100%;
+    height: 100%;
 }
 
-/*
-===================================
-This is for the first page
-===================================
-*/
 
-#first {
-    background: url(../img/sky.jpg) center center fixed no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 1200px;
-}
 
-.nav {
-    width: 500px; 
-    position: fixed;
-    top: 50px;
-    right: 100px;
-}
-
-li, a {
-    text-decoration: none;
-    list-style: none;
-}
-
-a {
-    padding: 10px;
-    color: white;
-}
-
-li {
-    display: inline-block;
-    width: 100px;
-}
-
-/*
-===================================
-This is for the second page
-===================================
-*/
-
-#second {
-    background-color: black;
-    background-size: cover;
-    width: 100%;
-    height: 1200px;
-}
-
-/*
-===================================
-This is for the third page
-===================================
-*/
-
-#third {
-    background-color: grey;
-    background-size: cover;
-    width: 100%;
-    height: 1200px;
-}
-
-/*
-===================================
-This is for the fourth page
-===================================
-*/
-
-#fourth {
-    background-color: white;
-    background-size: cover;
-    width: 100%;
-    height: 1200px;
-}
