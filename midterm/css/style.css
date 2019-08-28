@@ -1,17 +1,191 @@
+:root {
+    font-size: 9px;
+    --font1: 'Amiri', serif;
+    --font2: 'Quicksand', sans-serif;
+    --dark: #372f2c;
+    --red: #b91f32;
+    --white: #eee;
+}
+/* font-family: 'Amiri', serif; For Title*/
+/* font-family: 'Quicksand', sans-serif; For p*/
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Amiri', serif;
-    font-family: 'Quicksand', sans-serif;
+    color: var(--white);
+    /* border: solid 1px rgb(240, 11, 11); */
 }
-/* font-family: 'Amiri', serif; For Title*/
-/* font-family: 'Quicksand', sans-serif; For p*/
 
 html, body {
     width: 100%;
     height: 100%;
 }
 
+h1 {
+    font-size: 3.25rem;
+    letter-spacing: 0.1em;
+    color: var(--dark);
+    font-family: var(--font1);
+}
+
+h2 {
+    font-size: 3rem;
+    letter-spacing: 0.05em;
+    color: var(--dark);
+    font-family: var(--font1);
+}
+p {
+    font-size: 1.9rem;
+    letter-spacing: 0.05em;
+    color: var(--dark);
+    font-family: var(--font2);
+}
 
 
+
+/* START */
+
+header {
+    width: 100vw;
+    height: 100vh;
+    background: url(/img/header_bg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 0 110px;
+}
+
+header .header-nav-bar {
+    height: 95px;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .header-nav-bar nav ul {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    list-style: none;
+}
+
+header .header-nav-bar nav ul .nav-line {
+    border-left: solid 0.7px var(--white);
+    height: 17px;
+    opacity: 0.7;
+    transform: rotateZ(30deg);
+    margin: 0px 2.95rem;
+}
+
+header .header-nav-bar nav ul a {
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-family: var(--font2);
+}
+
+header .header-nav-bar nav ul a:hover {
+    color: var(--red);
+}
+
+header .logo-cnt {
+    width: 62px;
+    height: 83px;
+    padding: 7px 5px;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--white);
+    border-bottom-left-radius: 0.4em;
+    border-bottom-right-radius: 0.4em;
+}
+
+header .logo-cnt img {
+    width: 100%;
+}
+
+header .header-nav-bar .social-links {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+}
+
+header .header-nav-bar .social-links img{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    
+}
+
+header .header-nav-bar .social-links a:not(:last-child) {
+    margin-right: 2.95rem;
+}
+
+header .hero-text {
+    display: flex;
+    flex-flow: column;
+    margin-top: 80px;
+}
+
+header .hero-text h1 {
+    font-size: 7.5rem;
+    font-family: var(--font1);
+    font-weight: 100;
+    line-height: 75px;
+    letter-spacing: 0.1em;
+    max-width: 670px;
+    color: var(--white);
+}
+
+header .hero-text p {
+    margin-top: 20px;
+    font-size: 1.9rem;
+    max-width: 520px;
+    text-align: justify;
+    color: var(--white);
+}
+
+header .learn-more-btn  {
+    margin-top: 40px;
+    padding: 10px 0 10px 0 ;
+}
+header .learn-more-btn a {
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 0.5em 1em;
+    font-family: var(--font2);
+    border-radius: 30px;
+    border: 2px solid var(--red);
+    background-color: var(--red);
+    transition: 0.4s;
+}
+
+header .learn-more-btn a:hover {
+    border: 2px solid var(--red);
+    background: none;
+}
+
+
+.since-cnt h6 {
+    position: absolute;
+    font-size: 1.65rem;
+    letter-spacing: 3px;
+    font-weight: 100;
+    right: 65px;
+    bottom: 100px;
+    transform: rotateZ(270deg);
+    opacity: 0.7;
+}
+
+.since-cnt h6::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -80px;
+    width: 70px;
+    height: 1px;
+    background-color: var(--white);
+    opacity: 0.7;
+
+}
