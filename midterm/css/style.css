@@ -15,3 +15,160 @@ html, body {
 
 
 
+/*
+=================================
+Location
+=================================
+*/
+.location {
+    background-color: #fff;
+}
+
+.location__title {
+    height: 39px;
+    position: relative;
+    padding: 50px 0;
+}
+
+.locationTitle__container {
+    width: 717px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.locationTitle__hrLine--left {
+    width: 145px;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.locationTitle__hrLine--right {
+    width: 145px;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.locationTitle__title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #F3CDCD;
+}
+
+.shopList {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 260px);
+    grid-gap: 90px;
+    justify-content: center;
+}
+
+.shopList__item {
+    background-color: #CDAF91;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.shopList__container {
+    width: 260px;
+    height: 260px;
+    position: relative;
+}
+
+.shopList__insideContainer {
+    width: 240px;
+    height: 240px;
+    border: 1px solid white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.shop__name {
+    line-height: 18px;
+}
+
+.shop__contact {
+    border-bottom: 1px solid white;
+}
+
+.shopTime {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.shopTime__container {
+    width: 100px;
+    height: 65px;
+    text-align: center;
+    position: relative;
+}
+
+.shopDay {
+    font-size: 15px;
+}
+
+.shopHour {
+    width: 58px;
+    text-align: center;
+    border: 1px solid white;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.shopHour__open {
+    font-size: 12px;
+}
+
+.shopHour__close {
+    font-size: 12px;
+    color: #F3CDCD;
+    background-color: #fff;
+}
+
+.shopLink {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: white;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+}
+
+/*
+==============================
+Footer 
+==============================
+ */
+.footer {
+    background-color: #362F2C;
+    height: 98px;
+    position: relative;
+}
+
+.footer__copy {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 19px;
+}
