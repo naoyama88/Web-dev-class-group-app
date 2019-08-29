@@ -207,166 +207,6 @@ header .learn-more-btn a:hover {
     opacity: 0.7;
 }
 
-/*
-=================================
-Location
-=================================
-*/
-.location {
-    background-color: #fff;
-    position: relative;
-}
-
-.location__title {
-    height: 48px;
-    position: relative;
-    margin-top: 63px;
-    margin-bottom: 95px;
-}
-
-.locationTitle__container {
-    width: 717px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.locationTitle__hrLine--left {
-    width: 145px;
-    height: 1px;
-    background-color: black;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.locationTitle__hrLine--right {
-    width: 145px;
-    height: 1px;
-    background-color: black;
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-}
-
-.locationTitle__title {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #F3CDCD;
-    padding: 0 3px;
-}
-
-.shopList {
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 260px);
-    grid-gap: 90px;
-    justify-content: center;
-    padding-bottom: 191px;
-}
-
-.shopList__item {
-    background-color: #CDAF91;
-    color: #fff;
-    text-align: center;
-    position: relative;
-}
-
-.diagonalLine {
-    border-bottom: 1px solid white;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 30px;
-    transform: translateX(-4px) translateY(10px) rotate(45deg);
-}
-
-.shopList__container {
-    width: 260px;
-    height: 260px;
-    position: relative;
-}
-
-.shopList__insideContainer {
-    width: 240px;
-    height: 240px;
-    border-top: 1px solid white;
-    border-left: 1px solid white;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}
-
-.shopName {
-    width: 240px;
-    height: 20px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    color: white;
-}
-
-.shopName__text {
-    line-height: 20px;
-    font-size: 1.5rem;
-    color: white;
-}
-
-.shopName__hrLine--left {
-    width: 38px;
-    height: 1px;
-    background-color: white;
-    position: absolute;
-    top: 50%;
-    left: 10px;
-    transform: translateY(-50%);
-}
-
-.shopName__hrLine--right {
-    width: 38px;
-    height: 1px;
-    background-color: white;
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
-}
-
-.shopContact {
-    border-bottom: 1px solid white;
-    height: 60px;
-    padding: 5px 0;
-}
-
-.shopContact__address1 {
-    font-size: 1.5rem;
-    color: white;
-    font-weight: bold;
-}
-
-.shopContact__address2 {
-    font-size: 1.5rem;
-    color: white;
-    font-weight: bold;
-}
-
-.shopContact__tel {
-    font-size: 1.5rem;
-    color: white;
-}
-
-.shopTime {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-gap: 5px;
-    padding: 16px;
-}
-
 /* ----------MENU STARTS HERE---------- */
 #menu{
     width: 100%;
@@ -744,6 +584,166 @@ input[name="radio"] {
     /* bottom: 0px; */
     display: block;
     border: #372f2c solid 2px;
+}
+
+/*
+=================================
+Location
+=================================
+*/
+.location {
+    background-color: #fff;
+    position: relative;
+}
+
+.location__title {
+    height: 48px;
+    position: relative;
+    margin-top: 63px;
+    margin-bottom: 95px;
+}
+
+.locationTitle__container {
+    width: 717px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.locationTitle__hrLine--left {
+    width: 145px;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.locationTitle__hrLine--right {
+    width: 145px;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.locationTitle__title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #F3CDCD;
+    padding: 0 3px;
+}
+
+.shopList {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 260px);
+    grid-gap: 90px;
+    justify-content: center;
+    padding-bottom: 191px;
+}
+
+.shopList__item {
+    background-color: #CDAF91;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.diagonalLine {
+    border-bottom: 1px solid white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    transform: translateX(-4px) translateY(10px) rotate(45deg);
+}
+
+.shopList__container {
+    width: 260px;
+    height: 260px;
+    position: relative;
+}
+
+.shopList__insideContainer {
+    width: 240px;
+    height: 240px;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.shopName {
+    width: 240px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+}
+
+.shopName__text {
+    line-height: 20px;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.shopName__hrLine--left {
+    width: 38px;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+.shopName__hrLine--right {
+    width: 38px;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+.shopContact {
+    border-bottom: 1px solid white;
+    height: 60px;
+    padding: 5px 0;
+}
+
+.shopContact__address1 {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+}
+
+.shopContact__address2 {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+}
+
+.shopContact__tel {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.shopTime {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 5px;
+    padding: 16px;
 }
 
 .shopTime__container {
