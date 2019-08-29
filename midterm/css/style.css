@@ -883,10 +883,11 @@ Location
     color: var(--dark);
     opacity: 0.1;
     position: absolute;
-    bottom: 0;
+    bottom: -110px;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
+    user-select: none;
 }
 
 .arrow {
