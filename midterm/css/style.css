@@ -64,6 +64,7 @@ header .header-nav-bar {
     grid-auto-flow: column;
     align-items: center;
     justify-content: space-between;
+    
 }
 
 header .header-nav-bar nav ul {
@@ -271,7 +272,7 @@ header .learn-more-btn a:hover {
 }
 @keyframes since-cnt {
     0% {
-        opacity: 0;    
+        opacity: 0;
     }
     100% {
         opacity: 100;
