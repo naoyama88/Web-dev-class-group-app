@@ -796,24 +796,24 @@ Location
 
 .shopContact {
     border-bottom: 1px solid white;
-    height: 60px;
+    height: 70px;
     padding: 5px 0;
 }
 
 .shopContact__address1 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: white;
     font-weight: 500;
 }
 
 .shopContact__address2 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: white;
     font-weight: 500;
 }
 
 .shopContact__tel {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: white;
     font-weight: 300;
 }
@@ -840,7 +840,8 @@ Location
 }
 
 .shopHour {
-    width: 58px;
+    width: 65px;
+    height: 43px;
     text-align: center;
     border: 1px solid white;
     position: absolute;
@@ -851,14 +852,14 @@ Location
 }
 
 .shopHour__open {
-    font-size: 0.95rem;
+    font-size: 1.4rem;
     padding-top: 4px;
     padding-bottom: 2px;
     color: white;
 }
 
 .shopHour__close {
-    font-size: 0.95rem;
+    font-size: 1.4rem;
     color: #F3CDCD;
     background-color: #fff;
     padding-top: 4px;
