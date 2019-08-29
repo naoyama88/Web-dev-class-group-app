@@ -853,7 +853,7 @@ Location
 }
 
 .arrow {
-    transition: background-color 0.4s;
+    transition: background-color 0.2s;
 }
 
 .arrow:hover {
@@ -900,7 +900,7 @@ Footer
  */
 .footer {
     background-color: #362F2C;
-    height: 98px;
+    height: 110px;
     position: relative;
 }
 
