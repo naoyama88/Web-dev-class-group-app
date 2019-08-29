@@ -712,6 +712,7 @@ Location
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 0 3px;
+    font-family: var(--font1);
 }
 
 .shopList {
@@ -721,6 +722,7 @@ Location
     grid-gap: 90px;
     justify-content: center;
     padding-bottom: 191px;
+    font-family: var(--font2);
 }
 
 .shopList__item {
@@ -768,6 +770,8 @@ Location
     line-height: 20px;
     font-size: 1.5rem;
     color: white;
+    font-weight: 300;
+    font-style: italic;
 }
 
 .shopName__hrLine--left {
@@ -799,18 +803,19 @@ Location
 .shopContact__address1 {
     font-size: 1.5rem;
     color: white;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .shopContact__address2 {
     font-size: 1.5rem;
     color: white;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .shopContact__tel {
     font-size: 1.5rem;
     color: white;
+    font-weight: 300;
 }
 
 .shopTime {
@@ -831,6 +836,7 @@ Location
 .shopDay {
     font-size: 15px;
     color: white;
+    font-weight: 300;
 }
 
 .shopHour {
@@ -841,6 +847,7 @@ Location
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
+    font-weight: 300;
 }
 
 .shopHour__open {
