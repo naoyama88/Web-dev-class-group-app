@@ -414,14 +414,6 @@ Location
     background-color: #b91f32;
 } */
 
-.rightbar{
-    position: absolute;
-    top: 200px;
-    right: 19px;
-    width: 6px;
-    height: 100%;
-    background-color: #b91f32;
-}
 
 .menu-container{
     width: 100%;
