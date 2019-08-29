@@ -102,10 +102,37 @@ header .logo-cnt {
     background-color: var(--white);
     border-bottom-left-radius: 0.4em;
     border-bottom-right-radius: 0.4em;
+    animation: logo 1s 1;
+    animation-fill-mode: forwards;
 }
 
 header .logo-cnt img {
     width: 100%;
+}
+
+@keyframes logo {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+header .header-nav-bar {
+    animation: nav 1.5s 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes nav {
+    0% { 
+        opacity: 0;
+    }
+    100% {
+        opacity: 1; 
+    }
 }
 
 header .header-nav-bar .social-links {
@@ -141,11 +168,34 @@ header .hero-text h1 {
     color: var(--white);
     opacity: 0;
     animation: hero-title 1s 1;
-    animation-delay: 1s;
+    animation-delay: 0.4s;
     animation-fill-mode: forwards;
 }
 
 @keyframes hero-title {
+    0% { 
+        opacity: 0; 
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1; 
+        transform: translateX(0px);
+    }
+}
+
+header .hero-text p {
+    margin-top: 20px;
+    font-size: 1.9rem;
+    max-width: 520px;
+    text-align: justify;
+    opacity: 0;
+    color: var(--white);
+    animation: hero-sub 1s 1;
+    animation-delay: 0.6s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hero-sub {
     0% { 
         opacity: 0; 
         transform: translateY(20px);
@@ -156,16 +206,12 @@ header .hero-text h1 {
     }
 }
 
-header .hero-text p {
-    margin-top: 20px;
-    font-size: 1.9rem;
-    max-width: 520px;
-    text-align: justify;
-    color: var(--white);
-}
-
 header .learn-more-btn  {
     margin-top: 40px;
+    opacity: 0;
+    animation: learn-more-btn 1s 1;
+    animation-delay: 0.6s;
+    animation-fill-mode: forwards; 
 }
 header .learn-more-btn a {
     text-decoration: none;
@@ -184,6 +230,23 @@ header .learn-more-btn a:hover {
     background: none;
 }
 
+@keyframes learn-more-btn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 100;
+        transform: translateY(0px);
+    }
+}
+
+.since-cnt {
+    opacity: 0;
+    animation: since-cnt 0.8s 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
 
 .since-cnt h6 {
     position: absolute;
@@ -205,6 +268,14 @@ header .learn-more-btn a:hover {
     height: 1px;
     background-color: var(--white);
     opacity: 0.7;
+}
+@keyframes since-cnt {
+    0% {
+        opacity: 0;    
+    }
+    100% {
+        opacity: 100;
+    }
 }
 
 /* ----------MENU STARTS HERE---------- */
@@ -578,12 +649,16 @@ input[name="radio"] {
 }
 
 .leaf-3 {
-    width: 50px;
+    width: 35rem;
     position: absolute;
-    /* right: 0px; */
-    /* bottom: 0px; */
-    display: block;
-    border: #372f2c solid 2px;
+    right: 0px;
+    bottom: 0px;
+    display: inline-block;
+    /* border: #372f2c solid 2px; */
+}
+
+.leaf-3 img {
+    width: 100%;
 }
 
 /*
