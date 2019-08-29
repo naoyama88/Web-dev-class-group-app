@@ -320,6 +320,8 @@ Location
 
 .shopContact {
     border-bottom: 1px solid white;
+    height: 60px;
+    padding: 5px 0;
 }
 
 .shopContact__address1 {
