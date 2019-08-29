@@ -49,7 +49,7 @@ p {
 header {
     width: 100vw;
     height: 100vh;
-    background: url(/img/header_bg.png) no-repeat;
+    background: url(../img/header_bg.png) no-repeat;
     background-size: cover;
     background-position: center;
     padding: 0 110px;
@@ -196,12 +196,14 @@ Location
 */
 .location {
     background-color: #fff;
+    position: relative;
 }
 
 .location__title {
-    height: 39px;
+    height: 48px;
     position: relative;
-    padding: 50px 0;
+    margin-top: 63px;
+    margin-bottom: 95px;
 }
 
 .locationTitle__container {
@@ -237,6 +239,7 @@ Location
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #F3CDCD;
+    padding: 0 3px;
 }
 
 .shopList {
@@ -245,6 +248,7 @@ Location
     grid-template-columns: repeat(auto-fit, 260px);
     grid-gap: 90px;
     justify-content: center;
+    padding-bottom: 191px;
 }
 
 .shopList__item {
@@ -252,6 +256,15 @@ Location
     color: #fff;
     text-align: center;
     position: relative;
+}
+
+.diagonalLine {
+    border-bottom: 1px solid white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    transform: translateX(-4px) translateY(10px) rotate(45deg);
 }
 
 .shopList__container {
@@ -263,26 +276,75 @@ Location
 .shopList__insideContainer {
     width: 240px;
     height: 240px;
-    border: 1px solid white;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
     position: absolute;
     bottom: 0;
     right: 0;
 }
 
-.shop__name {
-    line-height: 18px;
+.shopName {
+    width: 240px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
 }
 
-.shop__contact {
+.shopName__text {
+    line-height: 20px;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.shopName__hrLine--left {
+    width: 38px;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+.shopName__hrLine--right {
+    width: 38px;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+.shopContact {
     border-bottom: 1px solid white;
+}
+
+.shopContact__address1 {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+}
+
+.shopContact__address2 {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+}
+
+.shopContact__tel {
+    font-size: 1.5rem;
+    color: white;
 }
 
 .shopTime {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 10px;
-    padding: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 5px;
+    padding: 16px;
 }
 
 .shopTime__container {
@@ -294,6 +356,7 @@ Location
 
 .shopDay {
     font-size: 15px;
+    color: white;
 }
 
 .shopHour {
@@ -307,13 +370,18 @@ Location
 }
 
 .shopHour__open {
-    font-size: 12px;
+    font-size: 0.95rem;
+    padding-top: 4px;
+    padding-bottom: 2px;
+    color: white;
 }
 
 .shopHour__close {
-    font-size: 12px;
+    font-size: 0.95rem;
     color: #F3CDCD;
     background-color: #fff;
+    padding-top: 4px;
+    padding-bottom: 2px;
 }
 
 .shopLink {
@@ -325,6 +393,59 @@ Location
     color: white;
     border-top: 1px solid white;
     border-left: 1px solid white;
+}
+
+.location__backgroundText {
+    width: 110%;
+    font-size: 45rem;
+    color: var(--dark);
+    opacity: 0.1;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.arrow {
+    transition: background-color 0.4s;
+}
+
+.arrow:hover {
+    background-color: white;
+    cursor: pointer;
+}
+
+.arrow:hover div {
+    background-color: #F3CDCD;
+}
+
+.arrow div {
+    background-color: white;
+    transition: background-color 0.4s;
+}
+
+.arrow__base {
+    position: absolute;
+    width: 14px;
+    height: 1px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.arrow__upper {
+    position: absolute;
+    width: 10px;
+    height: 1px;
+    transform: translateX(10.2px) translateY(7.5px) rotate(45deg);
+}
+
+.arrow__lower {
+    position: absolute;
+    width: 10px;
+    height: 1px;
+    transform: translateX(10.2px) translateY(14.8px) rotate(-45deg);
 }
 
 /*
