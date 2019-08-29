@@ -672,47 +672,8 @@ Location
     position: relative;
 }
 
-.location__title {
-    height: 48px;
-    position: relative;
-    margin-top: 63px;
-    margin-bottom: 95px;
-}
-
-.locationTitle__container {
-    width: 717px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.locationTitle__hrLine--left {
-    width: 145px;
-    height: 1px;
-    background-color: black;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.locationTitle__hrLine--right {
-    width: 145px;
-    height: 1px;
-    background-color: black;
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-}
-
-.locationTitle__title {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 0 3px;
-    font-family: var(--font1);
+.locationTitle {
+    padding-top: 150px;
 }
 
 .shopList {
@@ -721,6 +682,7 @@ Location
     grid-template-columns: repeat(auto-fit, 260px);
     grid-gap: 90px;
     justify-content: center;
+    padding-top: 150px;
     padding-bottom: 191px;
     font-family: var(--font2);
 }
