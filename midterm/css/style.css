@@ -193,17 +193,18 @@ header .learn-more-btn a:hover {
 
 
 /* ----------MENU STARTS HERE---------- */
+
 #menu{
     width: 100%;
     height: 100%;
     background: url(../img/signature2-07.png) no-repeat #FFFFE6;
     background-size: auto;
     background-position: left -100px top 200px;
+    overflow: hidden;
 }
 
 .menu-border{
     width: 100%;
-    height: inherit;
 }
 
 .menu-corner{
@@ -215,6 +216,7 @@ header .learn-more-btn a:hover {
     max-height: 205px;
     right: 110px;
     margin-top: 110px;
+    
 }
 
 .menu-corner:before{
@@ -233,7 +235,7 @@ header .learn-more-btn a:hover {
     top: 200px;
     right: 19px;
     width: 6px;
-    height: 2000px;
+    height: 100%;
     background-color: #b91f32;
 }
 
@@ -270,9 +272,12 @@ header .learn-more-btn a:hover {
     max-height: 280px;
     filter: var(--shadowfilter);
     transition: 0.6s ease;
+    -webkit-transform-origin: right center;
+    transform-origin: right center;
 }
 
 .menu-container img:hover{
+    cursor: pointer;
     transform: scale(1.2);
 }
 
@@ -294,7 +299,6 @@ input{
 }
 
 label {
-    cursor: pointer;
     user-select: none;
 }
 
@@ -306,8 +310,25 @@ input[type=radio]:checked ~ .menu-item-info{
 
     -webkit-transform: translateY(-50%) scale(1);
     transform: translateY(-50%) scale(1);
-    background-color: #c32032;
+    background-color: #ffffff;
 }
+
+input[type=radio]:checked ~ label img{
+
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+
+    -webkit-transform: translateX(-10%) scale(1.5);
+    transform: translateX(-10%) scale(1.5);
+}
+
+input[type=radio]:checked ~ label .title{
+
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    opacity: 0;
+}
+
 .menu-item-info{
     position: absolute;
 
@@ -316,11 +337,10 @@ input[type=radio]:checked ~ .menu-item-info{
     -webkit-transform-origin: left center;
     transform-origin: left center;
 
-    left: 60%;
-    top: 40%;
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
+    left: 40%;
+    top: 60%;
+    width: 350px;
+    height: 350px;
     padding: 1%;
 
     -webkit-transition: all .5s ease;
@@ -329,18 +349,21 @@ input[type=radio]:checked ~ .menu-item-info{
 
 .menu-item-info .inner {
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
     width: 100%;
     height: 100%;
     padding: 15%;
-    border-radius: 100%;
-    border: 1px solid #e4d2bc;
+    border: 2px solid var(--dark);
     text-align: center;
     overflow-wrap: break-word;  
 }
 
-.menu-item-info .inner p{
-    color: var(--white);
+.inner-offset{
+    
+    border: 1px solid grey;
+
 }
 
+  
+  /* ----------------END OF MENU----------------- */
