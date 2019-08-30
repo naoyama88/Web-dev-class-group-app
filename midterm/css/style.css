@@ -821,29 +821,31 @@ Parallax
 .parallax {
     perspective: 1px;
     transform-style: preserve-3d;
-    height: 100vh;
+    height: 60vh;
     overflow-x: hidden;
     overflow-y: scroll;
 }
 
 .ParallaxContainer {
-    height: 100vh;
+    height: 60vh;
     background: url(../img/parallax.png) no-repeat center;
     background-attachment: fixed;
     background-size: cover;
 }
 
 .teastroke-bottom{
+    /* border: solid red 1px; */
     background: url(../img/1x/tealine.png) no-repeat center;
-    width: 650px;
+    width: 550px;
     height: 159px;
     position: fixed;
-    top:50%;
+    top:30%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
 .teastroke-bottom:before{
+    /* border: solid red 1px; */
     content: '';
     position: absolute;
     top: -1084px;
@@ -855,11 +857,15 @@ Parallax
 }
 
 .teastroke-bottom:after{
+    /* border: solid red 1px; */
     content: 'Tea is the flow of time.';
-    font-size: 7.5rem;
+    font-size: 6rem;
+    letter-spacing: 0.1rem;
     position: absolute;
-    top: 200px;
+    text-align: center;
+    top: 140px;
     width: 100%;
+    opacity: 0.7;
 }
 
 /*
