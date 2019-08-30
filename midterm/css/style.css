@@ -710,8 +710,8 @@ Location
     grid-template-columns: repeat(auto-fit, 260px);
     grid-gap: 90px;
     justify-content: center;
-    padding-top: 150px;
-    padding-bottom: 191px;
+    padding-top: 14vw;
+    padding-bottom: 20vw;
     font-family: var(--font2);
 }
 
@@ -868,12 +868,12 @@ Location
 }
 
 .location__backgroundText {
-    width: 110%;
-    font-size: 45rem;
+    width: 100vw;
+    font-size: 25vw;
     color: var(--dark);
-    opacity: 0.1;
+    opacity: 0.05;
     position: absolute;
-    bottom: -110px;
+    bottom: -6.5vw;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
@@ -925,7 +925,7 @@ Location
 ==============================
 Footer 
 ==============================
- */
+*/
 .footer {
     background-color: #362F2C;
     height: 110px;
