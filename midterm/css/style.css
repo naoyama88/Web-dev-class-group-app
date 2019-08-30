@@ -285,7 +285,7 @@ header .learn-more-btn a:hover {
     width: 100%;
     background: url(../img/signature2-07.png) no-repeat #FFFFE6;
     background-size: auto;
-    background-position: left -100px top 200px;
+    background-position: left -50px top 200px;
 }
 
 .menu-border{
@@ -426,7 +426,7 @@ input[type=radio]:checked ~ label .title{
 
     left: 40%;
     top: 60%;
-    width: 250px;
+    width: 270px;
     height: 350px;
     padding: 3%;
 
@@ -985,4 +985,10 @@ Footer
         width: 100%;
     }
     
+}
+
+@media only screen and (min-width: 1920px){
+    #menu{
+        background-position: left 20px top 200px;
+    }
 }
