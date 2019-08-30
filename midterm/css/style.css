@@ -232,11 +232,11 @@ header .logo-cnt img {
 @keyframes logo {
     0% {
         opacity: 0;
-        transform: translateY(-50px);
+        transform: translate(-50%, -50%);
     }
     100% {
         opacity: 1;
-        transform: translateY(0px);
+        transform: translate(-50%, 0px);
     }
 }
 
@@ -1147,10 +1147,6 @@ MEDIA
         padding: 0px 0px;
     }
 
-    header .logo-cnt {
-        left: 47%;
-    }
-
     header .hero-text {
     align-items: center;
     }
@@ -1273,6 +1269,27 @@ MEDIA
         font-size: 1.2rem;
     }
 
+    .parallax {
+        height: 50vh;
+        overflow: hidden;
+    }
+    
+    .ParallaxContainer {
+        height: 50vh;
+    }
+    
+    .teastroke-bottom{
+        width: 350px;
+        height: 159px;
+        top:45%;
+    }
+    .teastroke-bottom:after{
+        font-size: 3rem;
+        letter-spacing: 0.45rem;
+        text-align: justify;
+        top: 85px;
+    }
+
 
 /* ----------------END----------------  */
 }
@@ -1296,36 +1313,11 @@ MEDIA
     .menu-container{
         grid-gap: 100px;
     }
-
-    .parallax {
-        height: 50vh;
-        overflow: hidden;
-    }
-    
-    .ParallaxContainer {
-        height: 50vh;
-    }
-    
-    .teastroke-bottom{
-        width: 250px;
-        height: 159px;
-        top:50%;
-    }
-    .teastroke-bottom:after{
-        font-size: 2.2rem;
-        letter-spacing: 0.3rem;
-        text-align: justify;
-        top: 65px;
-    }
 }
 
 
 
 @media (max-width: 500px){
-    header .logo-cnt {
-        left: 45%;
-    }
-
     header .hero-text h1 {
         font-size: 4.5rem;
         line-height: 4.5rem;
@@ -1350,5 +1342,26 @@ MEDIA
         margin-top: 20px;
         min-height: 350px;   
         grid-template-rows: 90% 1fr;
+    }
+
+    .parallax {
+        height: 50vh;
+        overflow: hidden;
+    }
+    
+    .ParallaxContainer {
+        height: 50vh;
+    }
+    
+    .teastroke-bottom{
+        width: 250px;
+        height: 159px;
+        top:50%;
+    }
+    .teastroke-bottom:after{
+        font-size: 2.2rem;
+        letter-spacing: 0.3rem;
+        text-align: justify;
+        top: 65px;
     }
 }
