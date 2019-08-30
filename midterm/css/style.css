@@ -396,47 +396,29 @@ header .learn-more-btn a:hover {
     width: 100%;
     background: url(../img/signature2-07.png) no-repeat #FFFFE6;
     background-size: auto;
-    background-position: left -50px top 200px;
-}
-
-.menu-border{
-    width: 100%;
-    height: 100%;
+    background-position: left -100px top 200px;
     position: relative;
 }
 
-.menu-corner{
+.menu-border{
     position: absolute;
-    background: url(../img/SVG/corner2.svg) no-repeat;
+    background: url(../img/1x/corner-full.png) no-repeat right top;
+
     width: 100%;
-    height: 205px;
-    max-width: 205px;
-    max-height: 205px;
+    height: 100%;
     right: 110px;
     margin-top: 110px;
-    
 }
 
 .menu-corner:before{
     content: '';
     position: absolute;
     top: 0%;
-    left: -2994px;
+    left: -2996px;
     width: 3000px;
-    height: 6px;
+    height: 4px;
     background-color: #b91f32;
 }
-/* 
-.menu-corner:after{
-    content: '';
-    position: absolute;
-    top: 200px;
-    right: 19px;
-    width: 6px;
-    height: 100%;
-    background-color: #b91f32;
-} */
-
 
 .menu-container{
     width: 100%;
@@ -537,7 +519,7 @@ input[type=radio]:checked ~ label .title{
 
     left: 40%;
     top: 60%;
-    width: 270px;
+    width: 250px;
     height: 350px;
     padding: 3%;
 
@@ -827,11 +809,56 @@ input[name="radio"] {
 Parallax
 =================================
 */
-.parallax {
+/* .parallax {
     background: url(../img/parallax.png) no-repeat center;
     height: 50vh;
     background-size: cover;
     background-attachment: fixed;
+}
+*/
+
+.parallax {
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.ParallaxContainer {
+    height: 100vh;
+    background: url(../img/parallax.png) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.teastroke-bottom{
+    background: url(../img/1x/tealine.png) no-repeat center;
+    width: 650px;
+    height: 159px;
+    position: fixed;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.teastroke-bottom:before{
+    content: '';
+    position: absolute;
+    top: -1084px;
+    left: 50%;
+    width: 1px;
+    height: 1084px;
+    background-color: var(--white);
+    opacity: 0.6;
+}
+
+.teastroke-bottom:after{
+    content: 'Tea is the flow of time.';
+    font-size: 7.5rem;
+    position: absolute;
+    top: 200px;
+    width: 100%;
 }
 
 /*
@@ -1082,10 +1109,47 @@ Footer
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
-    font-size: 19px;
+    font-size: 18px;
 }
 
+/* 48em = 768px @ 16pt font */
 
+@media (max-width: 768px) {
+    /* ----------------From Header to Feature----------------  */
+    header {  
+        padding: 0px 0px;
+    }
+
+    header .hero-text {
+    align-items: center;
+    }
+
+    header .hero-text h1 {
+        text-align: center;
+    }
+
+
+    header .hero-text p {
+        text-align: center;
+    }
+
+    .header {
+        display: block;
+    }
+    .header-nav-bar {
+        visibility: hidden;
+    }
+    .since-cnt {
+        visibility: hidden;
+    }
+    .since-cnt2 {
+        visibility: hidden;
+    }
+    .leaf-3 {
+        visibility: hidden;
+    }
+    /* ----------------END----------------  */
+}
 
 
 /* --------------MEDIA--------------- */
@@ -1128,51 +1192,5 @@ Footer
     .inner-offset{
         width: 100%;
     }
-}
-
-
-/* 48em = 768px @ 16pt font */
-
-@media (max-width: 768px) {
-    /* ----------------From Header to Feature----------------  */
-    header {  
-        padding: 0px 0px;
-    }
-
-    header .hero-text {
-    align-items: center;
-    }
-
-    header .hero-text h1 {
-        text-align: center;
-    }
-
-
-    header .hero-text p {
-        text-align: center;
-    }
-
-    .header {
-        display: block;
-    }
-    .header-nav-bar {
-        visibility: hidden;
-    }
-    .since-cnt {
-        visibility: hidden;
-    }
-    .since-cnt2 {
-        visibility: hidden;
-    }
-    .leaf-3 {
-        visibility: hidden;
-    }
-    /* ----------------END----------------  */
-}
-
-
-@media only screen and (min-width: 1920px){
-    #menu{
-        background-position: left 20px top 200px;
-    }
+    
 }
