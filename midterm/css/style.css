@@ -1164,7 +1164,7 @@ Footer
     .menu-btn {
         position: relative;
         left: 0px;
-        bottom: 0px;
+        bottom: 100px;
     }
 
 /* ----------------END----------------  */
@@ -1229,16 +1229,22 @@ Footer
     }
     #feature {
         width: 100vw;
-        height: 1100px;
+        height: 1000px;
         position: relative;
     }
     .feature-main {
-        top: 30%;
+        top: 35%;
     }
     .left-slides {
         margin-top: 20px;
         min-height: 350px;   
         grid-template-rows: 90% 1fr;
+    }
+
+    .menu-btn {
+        position: relative;
+        left: 0px;
+        bottom: 150px;
     }
 
  
