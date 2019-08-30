@@ -66,6 +66,7 @@ header {
 
 .header {
     position: fixed;
+    top: 0px;
     right: 0px;
     width: 100%;
     z-index: 3;
@@ -1333,6 +1334,10 @@ MEDIA
     header .hero-text p {
         font-size: 1.5rem;
     }
+    .hero-text {
+        padding: 0px 15px;
+    }
+
     #feature {
         width: 100vw;
         height: 1100px;
