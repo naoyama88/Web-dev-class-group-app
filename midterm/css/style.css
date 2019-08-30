@@ -1298,6 +1298,10 @@ MEDIA
 }
 
 @media (max-width: 500px) {
+    header {
+        background-size: cover;
+        background-position: 77% 50%;
+    }
     header .hero-text h1 {
         font-size: 4.5rem;
         line-height: 4.5rem;
