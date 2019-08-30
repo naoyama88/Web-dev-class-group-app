@@ -442,7 +442,7 @@ header .learn-more-btn a:hover {
 .menu-header .leftbar, .rightbar{
     width: 5%;
     height: 1px;
-    background-color: var(--red);
+    background-color: var(--dark);
 }
 
 .menu-header .header-title{
@@ -1113,12 +1113,19 @@ Footer
     font-size: 18px;
 }
 
-/* 48em = 768px @ 16pt font */
+
+
+
 
 @media (max-width: 768px) {
     /* ----------------From Header to Feature----------------  */
+
     header {  
         padding: 0px 0px;
+    }
+
+    header .logo-cnt {
+        left: 47%;
     }
 
     header .hero-text {
@@ -1126,11 +1133,14 @@ Footer
     }
 
     header .hero-text h1 {
+        font-size: 5.5rem;
+        line-height: 5.5rem;
         text-align: center;
     }
 
 
     header .hero-text p {
+        font-size: 2rem;
         text-align: center;
     }
 
@@ -1149,7 +1159,43 @@ Footer
     .leaf-3 {
         visibility: hidden;
     }
-    /* ----------------END----------------  */
+
+    #feature {
+        width: 100vw;
+        height: 1000px;
+    
+    }
+
+    .feature-main {
+        top: 35%;
+        display: flex;
+        flex-flow: column;
+        text-align: center;
+        min-height: 500px;
+    }
+
+    .left-slides {
+        min-height: 450px;    
+    }
+    figure img {
+        width: 90%;
+        transform: translateX(5%);
+    }
+    .right-cnt {
+        padding-left: 0px;
+    }
+
+    .right-text {
+        padding: 20px 0px 10px 0px;
+    }
+
+    .menu-btn {
+        position: relative;
+        left: 0px;
+        bottom: 0px;
+    }
+
+/* ----------------END----------------  */
 }
 
 
@@ -1194,4 +1240,32 @@ Footer
         width: 100%;
     }
     
+}
+
+@media (max-width: 500px){
+    header .logo-cnt {
+        left: 45%;
+    }
+
+    header .hero-text h1 {
+        font-size: 4.5rem;
+        line-height: 4.5rem;
+    }
+
+    header .hero-text p {
+        font-size: 1.5rem;
+    }
+    #feature {
+        width: 100vw;
+        height: 1100px;
+        position: relative;
+    }
+    .feature-main {
+        top: 35%;
+    }
+    .left-slides {
+        margin-top: 20px;
+        min-height: 350px;   
+        grid-template-rows: 90% 1fr;
+    }
 }
