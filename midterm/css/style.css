@@ -46,7 +46,11 @@ p {
     font-weight: 300;
 }
 
-/*----------------Header Starts-----------------*/
+/*
+==============================
+HEADER
+==============================
+*/
 
 header {
     width: 100vw;
@@ -57,9 +61,12 @@ header {
     padding: 0 110px;
 }
 
-/* -----Hambergur nav Starts-----*/
+
+/* -------Start of Hamburger nav---------- */
+
 .header {
     position: fixed;
+    top: 0px;
     right: 0px;
     width: 100%;
     z-index: 3;
@@ -225,11 +232,11 @@ header .logo-cnt img {
 @keyframes logo {
     0% {
         opacity: 0;
-        transform: translateY(-50px);
+        transform: translate(-50%, -50%);
     }
     100% {
         opacity: 1;
-        transform: translateY(0px);
+        transform: translate(-50%, 0px);
     }
 }
 
@@ -389,9 +396,13 @@ header .learn-more-btn a:hover {
         opacity: 100;
     }
 }
-/*----------------Header Ends-----------------*/
 
-/* ----------MENU STARTS HERE---------- */
+
+/*
+==============================
+MENU
+==============================
+*/
 
 #menu{
     width: 100%;
@@ -447,6 +458,7 @@ header .learn-more-btn a:hover {
 
 .menu-header .header-title{
     padding: 0 15px 0 15px;
+    text-align: center;
 }
 .menu-container img{
     width:200px;
@@ -551,9 +563,11 @@ input[type=radio]:checked ~ label .title{
 }
 
 
-/* ---------------END OF MENU--------------- */
-
-/*------------ Feature Starts ------------*/
+/*
+==============================
+FEATURE
+==============================
+*/
 
 #feature {
     width: 100vw;
@@ -803,7 +817,6 @@ input[name="radio"] {
 .leaf-3 img {
     width: 100%;
 }
-/*------------ Feature Ends ------------*/
 
 /*
 =================================
@@ -1105,6 +1118,7 @@ Footer
     background-color: #362F2C;
     height: 110px;
     position: relative;
+    text-align: center;
 }
 
 .footer__copy {
@@ -1125,15 +1139,12 @@ MEDIA
 ==============================
 */
 
+
 @media (max-width: 768px) {
     /* ----------------From Header to Feature----------------  */
 
     header {  
         padding: 0px 0px;
-    }
-
-    header .logo-cnt {
-        left: 47%;
     }
 
     header .hero-text {
@@ -1212,7 +1223,7 @@ MEDIA
     }
 
     .menu-container{
-        padding: 100px 10px 25% 10px;
+        padding: 100px 10% 25% 10%;
     }
 
     .menu-container img{
@@ -1250,8 +1261,33 @@ MEDIA
         padding-top: 30px;
     }
 
+    .inner-offset h2{
+        font-size: 2rem;
+    }
+
     .inner-offset p{
-        font-size: 12px;
+        font-size: 1.2rem;
+    }
+
+    .parallax {
+        height: 50vh;
+        overflow: hidden;
+    }
+    
+    .ParallaxContainer {
+        height: 50vh;
+    }
+    
+    .teastroke-bottom{
+        width: 350px;
+        height: 159px;
+        top:45%;
+    }
+    .teastroke-bottom:after{
+        font-size: 3rem;
+        letter-spacing: 0.45rem;
+        text-align: justify;
+        top: 85px;
     }
 
 
@@ -1259,11 +1295,29 @@ MEDIA
 }
 
 
-@media (max-width: 500px){
-    header .logo-cnt {
-        left: 45%;
+@media (max-width: 1024px) {
+    .menu-border{
+        background: none;
     }
 
+    .menu-header{
+        padding-top: 50px;
+    }
+
+    .menu-container{
+        grid-gap: 100px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .menu-container{
+        grid-gap: 100px;
+    }
+}
+
+
+
+@media (max-width: 500px){
     header .hero-text h1 {
         font-size: 4.5rem;
         line-height: 4.5rem;
@@ -1272,6 +1326,10 @@ MEDIA
     header .hero-text p {
         font-size: 1.5rem;
     }
+    .hero-text {
+        padding: 0px 15px;
+    }
+
     #feature {
         width: 100vw;
         height: 1100px;
