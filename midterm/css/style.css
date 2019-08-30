@@ -834,7 +834,6 @@ Parallax
 }
 
 .teastroke-bottom{
-    /* border: solid red 1px; */
     background: url(../img/1x/tealine.png) no-repeat center;
     width: 550px;
     height: 159px;
@@ -845,7 +844,6 @@ Parallax
 }
 
 .teastroke-bottom:before{
-    /* border: solid red 1px; */
     content: '';
     position: absolute;
     top: -1084px;
@@ -857,7 +855,6 @@ Parallax
 }
 
 .teastroke-bottom:after{
-    /* border: solid red 1px; */
     content: 'Tea is the flow of time.';
     font-size: 6rem;
     letter-spacing: 0.1rem;
@@ -1273,5 +1270,26 @@ Footer
         margin-top: 20px;
         min-height: 350px;   
         grid-template-rows: 90% 1fr;
+    }
+
+    .parallax {
+        height: 50vh;
+        overflow: hidden;
+    }
+    
+    .ParallaxContainer {
+        height: 50vh;
+    }
+    
+    .teastroke-bottom{
+        width: 250px;
+        height: 159px;
+        top:50%;
+    }
+    .teastroke-bottom:after{
+        font-size: 2.2rem;
+        letter-spacing: 0.3rem;
+        text-align: justify;
+        top: 65px;
     }
 }
