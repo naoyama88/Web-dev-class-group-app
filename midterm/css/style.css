@@ -1164,7 +1164,7 @@ Footer
     .menu-btn {
         position: relative;
         left: 0px;
-        bottom: 100px;
+        bottom: 0px;
     }
 
 /* ----------------END----------------  */
@@ -1229,7 +1229,7 @@ Footer
     }
     #feature {
         width: 100vw;
-        height: 1000px;
+        height: 1100px;
         position: relative;
     }
     .feature-main {
@@ -1240,12 +1240,4 @@ Footer
         min-height: 350px;   
         grid-template-rows: 90% 1fr;
     }
-
-    .menu-btn {
-        position: relative;
-        left: 0px;
-        bottom: 150px;
-    }
-
- 
 }
