@@ -46,7 +46,11 @@ p {
     font-weight: 300;
 }
 
-/*----------------Header Starts-----------------*/
+/*
+==============================
+HEADER
+==============================
+*/
 
 header {
     width: 100vw;
@@ -57,7 +61,9 @@ header {
     padding: 0 110px;
 }
 
-/* -----Hambergur nav Starts-----*/
+
+/* -------Start of Hamburger nav---------- */
+
 .header {
     position: fixed;
     right: 0px;
@@ -389,9 +395,13 @@ header .learn-more-btn a:hover {
         opacity: 100;
     }
 }
-/*----------------Header Ends-----------------*/
 
-/* ----------MENU STARTS HERE---------- */
+
+/*
+==============================
+MENU
+==============================
+*/
 
 #menu{
     width: 100%;
@@ -551,9 +561,11 @@ input[type=radio]:checked ~ label .title{
 }
 
 
-/* ---------------END OF MENU--------------- */
-
-/*------------ Feature Starts ------------*/
+/*
+==============================
+FEATURE
+==============================
+*/
 
 #feature {
     width: 100vw;
@@ -803,7 +815,6 @@ input[name="radio"] {
 .leaf-3 img {
     width: 100%;
 }
-/*------------ Feature Ends ------------*/
 
 /*
 =================================
@@ -1125,6 +1136,36 @@ MEDIA
 ==============================
 */
 
+
+@media (max-width: 500px){
+    header .logo-cnt {
+        left: 45%;
+    }
+
+    header .hero-text h1 {
+        font-size: 4.5rem;
+        line-height: 4.5rem;
+    }
+
+    header .hero-text p {
+        font-size: 1.5rem;
+    }
+    #feature {
+        width: 100vw;
+        height: 1100px;
+        position: relative;
+    }
+    .feature-main {
+        top: 35%;
+    }
+    .left-slides {
+        margin-top: 20px;
+        min-height: 350px;   
+        grid-template-rows: 90% 1fr;
+    }
+}
+
+
 @media (max-width: 768px) {
     /* ----------------From Header to Feature----------------  */
 
@@ -1212,7 +1253,7 @@ MEDIA
     }
 
     .menu-container{
-        padding: 100px 10px 25% 10px;
+        padding: 100px 10% 25% 10%;
     }
 
     .menu-container img{
@@ -1250,8 +1291,12 @@ MEDIA
         padding-top: 30px;
     }
 
+    .inner-offset h2{
+        font-size: 2rem;
+    }
+
     .inner-offset p{
-        font-size: 12px;
+        font-size: 1.2rem;
     }
 
 
@@ -1259,31 +1304,23 @@ MEDIA
 }
 
 
-@media (max-width: 500px){
-    header .logo-cnt {
-        left: 45%;
+@media (max-width: 1024px) {
+    .menu-border{
+        background: none;
     }
 
-    header .hero-text h1 {
-        font-size: 4.5rem;
-        line-height: 4.5rem;
+    .menu-header{
+        padding-top: 50px;
     }
 
-    header .hero-text p {
-        font-size: 1.5rem;
+    .menu-container{
+        grid-gap: 100px;
     }
-    #feature {
-        width: 100vw;
-        height: 1100px;
-        position: relative;
-    }
-    .feature-main {
-        top: 35%;
-    }
-    .left-slides {
-        margin-top: 20px;
-        min-height: 350px;   
-        grid-template-rows: 90% 1fr;
+}
+
+@media (max-width: 1440px) {
+    .menu-container{
+        grid-gap: 100px;
     }
 
     .parallax {
