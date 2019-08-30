@@ -457,6 +457,7 @@ MENU
 
 .menu-header .header-title{
     padding: 0 15px 0 15px;
+    text-align: center;
 }
 .menu-container img{
     width:200px;
@@ -1116,6 +1117,7 @@ Footer
     background-color: #362F2C;
     height: 110px;
     position: relative;
+    text-align: center;
 }
 
 .footer__copy {
@@ -1135,35 +1137,6 @@ Footer
 MEDIA
 ==============================
 */
-
-
-@media (max-width: 500px){
-    header .logo-cnt {
-        left: 45%;
-    }
-
-    header .hero-text h1 {
-        font-size: 4.5rem;
-        line-height: 4.5rem;
-    }
-
-    header .hero-text p {
-        font-size: 1.5rem;
-    }
-    #feature {
-        width: 100vw;
-        height: 1100px;
-        position: relative;
-    }
-    .feature-main {
-        top: 35%;
-    }
-    .left-slides {
-        margin-top: 20px;
-        min-height: 350px;   
-        grid-template-rows: 90% 1fr;
-    }
-}
 
 
 @media (max-width: 768px) {
@@ -1342,5 +1315,35 @@ MEDIA
         letter-spacing: 0.3rem;
         text-align: justify;
         top: 65px;
+    }
+}
+
+
+
+@media (max-width: 500px){
+    header .logo-cnt {
+        left: 45%;
+    }
+
+    header .hero-text h1 {
+        font-size: 4.5rem;
+        line-height: 4.5rem;
+    }
+
+    header .hero-text p {
+        font-size: 1.5rem;
+    }
+    #feature {
+        width: 100vw;
+        height: 1100px;
+        position: relative;
+    }
+    .feature-main {
+        top: 35%;
+    }
+    .left-slides {
+        margin-top: 20px;
+        min-height: 350px;   
+        grid-template-rows: 90% 1fr;
     }
 }
