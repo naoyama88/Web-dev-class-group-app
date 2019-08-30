@@ -1116,6 +1116,11 @@ Footer
 
 
 
+/*
+==============================
+MEDIA
+==============================
+*/
 
 @media (max-width: 768px) {
     /* ----------------From Header to Feature----------------  */
@@ -1195,14 +1200,14 @@ Footer
         bottom: 0px;
     }
 
-/* ----------------END----------------  */
-}
+    .menu-border{
+        background: none;
+    }
 
+    .menu-header{
+        padding-top: 50px;
+    }
 
-/* --------------MEDIA--------------- */
-
-
-@media only screen and (max-width: 600px) {
     .menu-container{
         padding: 100px 10px 25% 10px;
     }
@@ -1218,6 +1223,7 @@ Footer
         -webkit-transform-origin: left center;
         transform-origin: left center;
     
+        top:60%;
         left: 50%;
         right: 50%;
         width: 100%;
@@ -1231,16 +1237,24 @@ Footer
 
     input[type=radio]:checked ~ .menu-item-info{
         -webkit-transition: all .5s ease;
-    transition: all .5s ease;
-        -webkit-transform: translate(-50%, 20%) scale(1);
+        transition: all .5s ease;
+        -webkit-transform: translateY(-50%, 20%) scale(1);
         transform: translate(-50%, 20%) scale(1);
     }
 
     .inner-offset{
         width: 100%;
+        padding-top: 30px;
     }
-    
+
+    .inner-offset p{
+        font-size: 12px;
+    }
+
+
+/* ----------------END----------------  */
 }
+
 
 @media (max-width: 500px){
     header .logo-cnt {
