@@ -692,6 +692,18 @@ input[name="radio"] {
 
 /*
 =================================
+Parallax
+=================================
+*/
+.parallax {
+    background: url(../img/parallax.png) no-repeat center;
+    height: 50vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*
+=================================
 Location
 =================================
 */
