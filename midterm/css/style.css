@@ -47,7 +47,8 @@ p {
 
 
 
-/* START */
+
+/*----------------Header Starts-----------------*/
 
 header {
     width: 100vw;
@@ -57,6 +58,118 @@ header {
     background-position: center;
     padding: 0 110px;
 }
+
+/* -----Hambergur nav Starts-----*/
+.header {
+    position: fixed;
+    right: 0px;
+    width: 100%;
+    z-index: 3;
+    display: none;
+    text-align: center;
+  }
+  
+  .header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: var(--white);
+  }
+  
+  .header li a {
+    display: block;
+    font-size: 1.8rem;
+    color: var(--dark);
+    font-family: var(--font2);
+    padding: 20px 20px;
+    text-decoration: none;
+  }
+  
+  .header li a:hover,
+  .header .menu-btn:hover {
+    background-color: var(--red);
+    color: var(--white)
+  }
+  
+  
+  /* menu */
+  
+  .header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+  }
+  
+  /* menu icon */
+  
+  .header .menu-icon {
+    cursor: pointer;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+  
+  .header .menu-icon .nav-icon {
+    background: var(--red);
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 22px;
+  }
+  
+  .header .menu-icon .nav-icon:before,
+  .header .menu-icon .nav-icon:after {
+    background: var(--red);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+  .header .menu-icon .nav-icon:before {
+    top: 5px;
+  }
+  
+  .header .menu-icon .nav-icon:after {
+    top: -5px;
+  }
+  
+  /* menu btn */
+  
+  .header .menu-btn {
+    display: none;
+  }
+  
+  .menu-btn:checked ~ .header {
+      background-color: var(--white);
+  }
+
+  .menu-btn:checked ~ .header .menu {
+    max-height: 240px;
+  }
+  
+  .menu-btn:checked ~ .header .menu-icon .nav-icon {
+    background: transparent;
+    
+  }
+  
+  .menu-btn:checked ~ .header .menu-icon .nav-icon:before {
+    transform: rotate(-45deg);
+    top:0;
+    background: var(--dark);
+  }
+  
+  .menu-btn:checked ~ .header .menu-icon .nav-icon:after {
+    transform: rotate(45deg);
+    top:0;
+    background: var(--dark);
+  }
+  /* ---------Hambergur nav Ends---------*/
 
 header .header-nav-bar {
     height: 95px;
@@ -278,6 +391,7 @@ header .learn-more-btn a:hover {
         opacity: 100;
     }
 }
+/*----------------Header Ends-----------------*/
 
 /* ----------MENU STARTS HERE---------- */
 #menu{
@@ -344,7 +458,7 @@ header .learn-more-btn a:hover {
 
 .menu-header .leftbar, .rightbar{
     width: 5%;
-    height: 2px;
+    height: 1px;
     background-color: var(--dark);
     opacity: 0.7;
 }
@@ -431,13 +545,34 @@ input[type=radio]:checked ~ .menu-item-info{
     color: var(--white);
 }
 
-/* Feature */
+/*------------ Feature Starts ------------*/
 
 #feature {
     width: 100vw;
     height: 100vh;
     position: relative;
 }
+
+#feature .menu-header{
+    width: 100%;
+    padding-top: 10px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#feature .menu-header .leftbar, .rightbar{
+    width: 5%;
+    height: 1px;
+    background-color: var(--dark);
+    opacity: 0.7;
+}
+
+#feature .menu-header .header-title{
+    padding: 0 15px 0 15px;
+}
+
 
 .feature-main {
     position: absolute;
@@ -655,12 +790,12 @@ input[name="radio"] {
     right: 0px;
     bottom: 0px;
     display: inline-block;
-    /* border: #372f2c solid 2px; */
 }
 
 .leaf-3 img {
     width: 100%;
 }
+/*------------ Feature Ends ------------*/
 
 /*
 =================================
@@ -942,3 +1077,46 @@ Footer
     color: #fff;
     font-size: 19px;
 }
+
+
+  
+  
+  /* 48em = 768px @ 16pt font */
+  
+@media (max-width: 768px) {
+    /* ----------------From Header to Feature----------------  */
+    header {  
+        padding: 0px 0px;
+    }
+
+    header .hero-text {
+    align-items: center;
+    }
+
+    header .hero-text h1 {
+        text-align: center;
+    }
+
+
+    header .hero-text p {
+        text-align: center;
+    }
+
+    .header {
+        display: block;
+    }
+    .header-nav-bar {
+        visibility: hidden;
+    }
+    .since-cnt {
+        visibility: hidden;
+    }
+    .since-cnt2 {
+        visibility: hidden;
+    }
+    .leaf-3 {
+        visibility: hidden;
+    }
+    /* ----------------END----------------  */
+}
+  

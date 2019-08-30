@@ -14,11 +14,21 @@
 <body>
     <div class="wrapper">
         <header>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <div class="header">
+                <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+                <ul class="menu">
+                    <li><a href="#dont">Feature</a></li>
+                    <li><a href="#forget">Tea</a></li>
+                    <li><a href="#forget">Location</a></li>
+                </ul>
+            </div>
+
             <div class="logo-cnt"><img src="./img/LOGO.png" alt="logo"></div>
             <div class="header-nav-bar">
                 <nav>
                     <ul>
-                        <li><a href="#about">About</a></li>
+                        <li><a href="#feature">Feature</a></li>
                         <div class="nav-line"></div>
                         <li><a href="#tea">Tea</a></li>
                         <div class="nav-line"></div>
@@ -42,6 +52,13 @@
             </div>
         </header>
         <div id="feature">
+            <div class="menu-header">
+                    <div class="leftbar"></div>
+                    <div class="header-title">
+                        <h1>Feature</h1>
+                    </div>
+                    <div class="rightbar"></div>
+            </div>
             <div class="feature-main">
                 <input type="radio" id="first" class="customRadio" name="radio" checked>
                 <input type="radio" id="second" class="customRadio" name="radio">
@@ -660,6 +677,9 @@
             <div class="footer__copy"> &copy;Gong Cha 2016 All Right Reserved. Web Design By XXXXXX </div>
         </footer>
     </div>
+
+    
+   
 </body>
 
 </html>
